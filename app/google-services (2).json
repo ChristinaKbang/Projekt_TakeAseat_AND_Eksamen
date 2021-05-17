@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "362590035397",
+    "project_id": "loginfortakeaseat",
+    "storage_bucket": "loginfortakeaseat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362590035397:android:b71f026296146f69763fac",
+        "android_client_info": {
+          "package_name": "com.example.projekt_takeaseat1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362590035397-ui4jmsnmkar9fhvs8bqhsueb1a0go23h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projekt_takeaseat1",
+            "certificate_hash": "85f7b9c0acea8e4e518f5d79bd2382b7ba62ad84"
+          }
+        },
+        {
+          "client_id": "362590035397-qihm7ki51u3in310d1s8mgubv3dss99m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPx4i-c8ta-LQS0HnEMvtcPRvkrkKXy7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362590035397-qihm7ki51u3in310d1s8mgubv3dss99m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

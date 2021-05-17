@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217223970111",
+    "project_id": "projekt-takeaseat1",
+    "storage_bucket": "projekt-takeaseat1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217223970111:android:1996babd94e6f89749678a",
+        "android_client_info": {
+          "package_name": "com.example.projekt_takeaseat1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217223970111-o2fjh1e5e948iedrjh88r1s9jkgfhfm2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9y4_NayTAsnY_i0bRVE1oTk8DmvXbO64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217223970111-o2fjh1e5e948iedrjh88r1s9jkgfhfm2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
