@@ -1,4 +1,4 @@
-package com.example.projekt_takeaseat1;
+package com.example.projekt_takeaseat1.ui.news;
 
 import android.os.Bundle;
 
@@ -11,12 +11,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class OrderFragment extends Fragment {
+import com.example.projekt_takeaseat1.R;
+
+public class News_Order_Fragment extends Fragment {
 
     private ImageButton back_to_table;
     private Button confirm_reservation;
 
-public OrderFragment(){
+public News_Order_Fragment(){
 
 }
 
@@ -31,7 +33,7 @@ public OrderFragment(){
         back_to_table.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(getView()).navigate(R.id.tableFragment);
+                Navigation.findNavController(getView()).navigate(R.id.newsTableFragment);
             }
         });
 confirm_reservation.setOnClickListener(new View.OnClickListener() {

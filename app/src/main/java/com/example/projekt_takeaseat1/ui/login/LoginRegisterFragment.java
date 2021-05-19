@@ -1,4 +1,4 @@
-package com.example.projekt_takeaseat1.views;
+package com.example.projekt_takeaseat1.ui.login;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,7 +17,6 @@ import androidx.navigation.Navigation;
 
 
 import com.example.projekt_takeaseat1.R;
-import com.example.projekt_takeaseat1.viewmodel.LoginRegisterViewModel;
 import com.google.firebase.auth.FirebaseUser;
 
 public class LoginRegisterFragment extends Fragment {
@@ -61,8 +60,9 @@ public class LoginRegisterFragment extends Fragment {
                 String password = passwordEditText.getText().toString();
                 if (email.length() > 0 && password.length() > 0) {
                     loginRegisterViewModel.register(email, password);
+                    Toast.makeText(getContext(), "Welcome", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getContext(), "Email og Password skal indtastes før registrering", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Email and Password must be entered before registration", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -75,8 +75,9 @@ public class LoginRegisterFragment extends Fragment {
 
                 if (email.length() > 0 && password.length() > 0) { //Skal være større end nul - der skal være en email + password
                     loginRegisterViewModel.login(email,password);
+                    Toast.makeText(getContext(), "Welcome", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getContext(), "Email og Password skal indtastes før login", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Email and Password must be entered before login", Toast.LENGTH_SHORT).show();
                 }
             }
         });

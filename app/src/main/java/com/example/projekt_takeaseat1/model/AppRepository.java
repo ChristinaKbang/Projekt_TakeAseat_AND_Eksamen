@@ -1,9 +1,11 @@
 package com.example.projekt_takeaseat1.model;
 
 import android.app.Application;
+import android.os.Build;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.lifecycle.MutableLiveData;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -33,6 +35,7 @@ public class AppRepository {
     }
 
     //Metode til at registere brugeren.
+
     public void register(String email, String password){
         firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(application.getMainExecutor(), new OnCompleteListener<AuthResult>() {
             @Override
@@ -45,6 +48,7 @@ public class AppRepository {
             }
         });
     }
+
 
     public void login(String email, String password){
         firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(application.getMainExecutor(), new OnCompleteListener<AuthResult>() {

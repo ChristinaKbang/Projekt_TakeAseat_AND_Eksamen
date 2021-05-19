@@ -37,4 +37,6 @@ public class Bottom_nav extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+
+
 }

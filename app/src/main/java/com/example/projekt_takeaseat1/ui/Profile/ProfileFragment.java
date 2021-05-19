@@ -15,7 +15,6 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
 import com.example.projekt_takeaseat1.R;
-import com.example.projekt_takeaseat1.viewmodel.LoggedInViewModel;
 import com.google.firebase.auth.FirebaseUser;
 
 public class ProfileFragment extends Fragment {
@@ -33,7 +32,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onChanged(FirebaseUser firebaseUser) {
                 if (firebaseUser != null){
-                    profileTextview.setText("Bruger:" + firebaseUser.getEmail());
+                    profileTextview.setText("User:" + firebaseUser.getEmail());
                 }
             }
         });
@@ -64,14 +63,5 @@ public class ProfileFragment extends Fragment {
 
         return view;
 
-       // final TextView textView = root.findViewById(R.id.fragment_loggedin_loggedInUser);
-       // profileViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-           // @Override
-           // public void onChanged(@Nullable String s) {
-             //   textView.setText(s);
-            //}
-        //});
-        //return root;
-   // }
 }
 }

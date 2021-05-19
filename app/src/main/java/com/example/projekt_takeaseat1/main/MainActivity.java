@@ -1,7 +1,6 @@
-package com.example.projekt_takeaseat1.views;
+package com.example.projekt_takeaseat1.main;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 
@@ -16,5 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 
 }

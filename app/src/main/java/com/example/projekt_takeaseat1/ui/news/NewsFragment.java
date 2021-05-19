@@ -32,9 +32,9 @@ public class NewsFragment extends Fragment {
                 //en bruger har trykke på en position i listen
 
                 if (position == 0) {
-                    Navigation.findNavController(NewsFragment.this.getView()).navigate(R.id.tableFragment);
+                    Navigation.findNavController(NewsFragment.this.getView()).navigate(R.id.newsTableFragment);
                 } else {
-                    Navigation.findNavController(NewsFragment.this.getView()).navigate(R.id.tableFragment);
+                    Navigation.findNavController(NewsFragment.this.getView()).navigate(R.id.newsTableFragment);
                 }
 
 

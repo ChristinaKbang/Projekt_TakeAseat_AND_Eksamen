@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.news.News_Order_Fragment"
-    >
+    tools:context=".ui.home.Home_Order_Fragment">
 
     <CalendarView
-        android:id="@+id/calendarView"
+        android:id="@+id/calendarViewHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -18,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTime"
+        android:id="@+id/editTextTimeHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -33,7 +32,7 @@
         app:layout_constraintVertical_bias="0.603" />
 
     <Button
-        android:id="@+id/confirm_reservation"
+        android:id="@+id/confirm_reservation_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
@@ -47,7 +46,7 @@
         app:layout_constraintVertical_bias="0.847" />
 
     <ImageButton
-        android:id="@+id/back_to_table"
+        android:id="@+id/back_to_table_home"
         android:layout_width="31dp"
         android:layout_height="37dp"
         android:background="@drawable/back"
@@ -59,19 +58,19 @@
         app:layout_constraintVertical_bias="0.903"></ImageButton>
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editTextNumberHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="number"
-        android:hint="Number of people"
         android:gravity="center"
+        android:hint="Number of people"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.717" />
-
+        app:layout_constraintVertical_bias="0.717"
+        tools:layout_editor_absoluteY="396dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

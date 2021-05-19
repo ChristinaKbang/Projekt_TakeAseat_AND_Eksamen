@@ -1,4 +1,4 @@
-package com.example.projekt_takeaseat1;
+package com.example.projekt_takeaseat1.ui.news;
 
 import android.os.Bundle;
 
@@ -10,25 +10,26 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.example.projekt_takeaseat1.R;
 
 
-
-
-public class TableFragment extends Fragment {
+public class News_tableFragment extends Fragment {
 
     private ImageButton table1, table2, table3, table4;
     private Button reserve;
     private boolean black = false;
     private ImageButton back;
 
-public TableFragment(){
+public News_tableFragment(){
 
 }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_table, container, false);
+        View view = inflater.inflate(R.layout.fragment_news_table, container, false);
         table1 = view.findViewById(R.id.Table1);
         table2 = view.findViewById(R.id.Table2);
         table3 = view.findViewById(R.id.Table3);
@@ -38,13 +39,7 @@ public TableFragment(){
         table1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (black){
-                    table1.setBackgroundResource(R.color.teal_700);
-                } else {
-                    table1.setBackgroundResource(R.color.black);
-                }
-
-                black = !black;
+                Toast.makeText(getContext(),"This table have already been booked", Toast.LENGTH_SHORT).show();
             }
         });
         table2.setOnClickListener(new View.OnClickListener() {

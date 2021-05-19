@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projekt_takeaseat1.R;
-import com.example.projekt_takeaseat1.ui.news.NewsAdapter;
+
 
 import java.util.List;
 
@@ -23,7 +23,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.Viewholder>  {
     OnListItemClickListener listener;
 
 
-    public HomeAdapter(OnListItemClickListener onListItemClickListener) {
+    public HomeAdapter(OnListItemClickListener listener) {
         this.listener = listener;
     }
 

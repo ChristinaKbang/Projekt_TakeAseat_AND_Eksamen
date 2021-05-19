@@ -1,4 +1,4 @@
-package com.example.projekt_takeaseat1.viewmodel;
+package com.example.projekt_takeaseat1.ui.login;
 
 import android.app.Application;
 

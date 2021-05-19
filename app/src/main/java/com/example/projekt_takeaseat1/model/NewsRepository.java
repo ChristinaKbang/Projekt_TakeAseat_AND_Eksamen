@@ -8,6 +8,7 @@ import androidx.lifecycle.MutableLiveData;
 
 
 import com.example.projekt_takeaseat1.R;
+import com.example.projekt_takeaseat1.ui.home.Home;
 import com.example.projekt_takeaseat1.ui.news.News;
 
 
@@ -24,12 +25,10 @@ public class NewsRepository {
 
 
         ArrayList<News> news = new ArrayList<>();
-        news.add(new News("NEW!! Try it out!", R.drawable.lava));
-        news.add(new News("NEW!! Try it out!", R.drawable.helmut));
-        news.add(new News("NEW!! Try it out!", R.drawable.detgladevanvid));
+
+        news.add(new News("NEW!! Try it out!", R.drawable.smokehouse));
+        news.add(new News("NEW!! Try it out!", R.drawable.randomrestaurant));
         news.add(new News("NEW!! Try it out!", R.drawable.mash));
-        news.add(new News("NEW!! Try it out!", R.drawable.flammen));
-        news.add(new News("NEW!! Try it out!", R.drawable.jensens));
 
 
         newsLiveData.setValue(news);

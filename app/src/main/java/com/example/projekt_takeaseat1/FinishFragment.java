@@ -35,6 +35,7 @@ public class FinishFragment extends Fragment {
         number = view.findViewById(R.id.number);
         tekst = view.findViewById(R.id.tekst);
 
+
         getOrderNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,4 +46,5 @@ public class FinishFragment extends Fragment {
 
         return view;
     }
+
 }
